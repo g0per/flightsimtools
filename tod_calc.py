@@ -36,4 +36,4 @@ rod = vel *5.2
 
 print('---------------------------')
 print(f'Desciende a {rod:.0f} fpm a {tod:.0f} NM de destino.\n')
-input('[Pulsa cualquier tecla para salir]')
+input('\t[Pulsa cualquier tecla para salir]')
