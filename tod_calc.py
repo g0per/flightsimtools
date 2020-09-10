@@ -34,6 +34,6 @@ while True:
 tod = ((alt_vuelo - alt_pista )*3)/1000
 rod = vel *5.2
 
-print('---------------------------')
+print( '----------------------------------------')
 print(f'Desciende a {rod:.0f} fpm a {tod:.0f} NM de destino.\n')
 input('\t[Pulsa cualquier tecla para salir]')
