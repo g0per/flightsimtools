@@ -5,7 +5,7 @@
 print('\t=============================================')
 print('\t\t CALCULADORA DE APROXIMACIÓN')
 print('\t=============================================')
-print('\n\tCalculadora de descenso óptimo del 3%.\n\n')
+print('\n\tCalculadora de descenso óptimo del 3%.\n\tDatos típicos: airliners -1800 fpm // GA -700 fpm.\n\n')
 
 while True:
     alt_vuelo = input('Altitud de vuelo (ft):\t\t')
