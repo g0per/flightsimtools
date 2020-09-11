@@ -24,4 +24,3 @@ while True:
         uni1 = float(uni1)
         print(f'\t{uni1:.2f} kg  = {uni1*lbsperkg:.2f} lbs')
         print(f'\t{uni1:.2f} lbs = {uni1/lbsperkg:.2f} kg')
-input('> ')
