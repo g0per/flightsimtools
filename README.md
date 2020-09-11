@@ -8,6 +8,7 @@ Pincha en el botón verde de 'código' arriba a la derecha, y bájatelo como ZIP
 
 ## Índice
  * tod_calc.py -> calculadora de aproximación. Indica T/D y ROD.
+ * lbs2kg.py -> conversor rápido entre libras y kilos.
 
 ## Dependencias
  * Python 3
