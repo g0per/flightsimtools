@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName />
+  <PowerSavingTime>600</PowerSavingTime>
+  <LedModule Name="LCDRadios" DinPin="2" ClsPin="3" ClkPin="4" Brightness="8" NumModules="1" />
+  <Button Name="ButtonM-KRadios" Pin="5" />
+  <Encoder Name="EncoderRadios" PinLeft="6" PinRight="7" EncoderType="0" />
+  <Button Name="ButtonSwapFreq" Pin="8" />
+  <Button Name="ButtonComNav" Pin="9" />
+</Config>
