@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName />
+  <PowerSavingTime>600</PowerSavingTime>
+  <LedModule Name="RadioACT" DinPin="22" ClsPin="24" ClkPin="26" Brightness="10" NumModules="1" />
+  <LedModule Name="RadioSTB" DinPin="23" ClsPin="25" ClkPin="27" Brightness="10" NumModules="1" />
+  <Encoder Name="RadioKnob" PinLeft="2" PinRight="3" EncoderType="0" />
+  <Button Name="RadioMHzKHz" Pin="4" />
+  <Button Name="RadioSwap" Pin="5" />
+  <Button Name="RadioComNav" Pin="6" />
+  <LedModule Name="ADF" DinPin="28" ClsPin="30" ClkPin="32" Brightness="10" NumModules="1" />
+  <Encoder Name="ADFKnob" PinLeft="8" PinRight="7" EncoderType="0" />
+  <Button Name="ADFSwap" Pin="9" />
+  <Button Name="ADFDME" Pin="10" />
+  <LedModule Name="FCUDisplay" DinPin="29" ClsPin="31" ClkPin="33" Brightness="10" NumModules="1" />
+  <Button Name="FCUMode" Pin="21" />
+  <Button Name="ADFDMEvsXPDRQNH" Pin="12" />
+  <Button Name="QNHKnobAct" Pin="13" />
+  <Output Name="LED1" Pin="14" />
+  <Output Name="LED2" Pin="15" />
+  <Output Name="LED3" Pin="16" />
+  <Output Name="LED4" Pin="17" />
+  <Output Name="LED5" Pin="18" />
+  <Button Name="XPDRKnobAct" Pin="11" />
+  <Button Name="XPDRUnits" Pin="20" />
+  <Encoder Name="FCUKnob1" PinLeft="51" PinRight="50" EncoderType="0" />
+  <Encoder Name="FCUKnob2" PinLeft="52" PinRight="53" EncoderType="0" />
+  <Button Name="FCUSelect" Pin="48" />
+  <Button Name="FCU Manage" Pin="49" />
+  <Button Name="FCUKnob1Button" Pin="46" />
+  <Button Name="FCUKnob2Button" Pin="47" />
+  <Button Name="LGButton" Pin="45" />
+  <Output Name="LEDFCUu" Pin="44" />
+  <Output Name="LEDFCUd" Pin="43" />
+  <Output Name="LedGearUp" Pin="42" />
+  <Output Name="LedGearDn" Pin="41" />
+</Config>

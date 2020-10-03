@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="d8b5be01-134a-4172-9137-4b55a0534c51">
+      <active>true</active>
+      <description>COM1 ACT</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x034E" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Display Module" serial="Botonera MF Mega/ SN-3e9-036" trigger="normal" ledAddress="RadioACT" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="2,3,4,5,6" ledDecimalPoints="4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="b6c9aa48-c09b-4747-896c-6139a2a64f72" operand="=" value="1" logic="and" />
+        </preconditions>
+        <transformation active="True" expression="$+10000" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="9fdd4b41-a1dc-46b7-b119-1b23240e9638" placeholder="A" />
+          <configref active="False" ref="b6c9aa48-c09b-4747-896c-6139a2a64f72" placeholder="@" />
+          <configref active="False" ref="27e4e1fd-5a65-490a-9837-ebad49e6e724" placeholder="?" />
+          <configref active="False" ref="e5c6c323-615d-4546-8f2b-91e5a37002c6" placeholder="§" />
+          <configref active="False" ref="9a43cbef-f836-4025-908e-41908fb5dfb0" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="9a43cbef-f836-4025-908e-41908fb5dfb0">
+      <active>true</active>
+      <description>COM1 STB</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x311A" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Display Module" serial="Botonera MF Mega/ SN-3e9-036" trigger="normal" ledAddress="RadioSTB" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="2,3,4,5,6" ledDecimalPoints="4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="b6c9aa48-c09b-4747-896c-6139a2a64f72" operand="=" value="1" logic="and" />
+        </preconditions>
+        <transformation active="True" expression="$+10000" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="9fdd4b41-a1dc-46b7-b119-1b23240e9638" placeholder="A" />
+          <configref active="False" ref="b6c9aa48-c09b-4747-896c-6139a2a64f72" placeholder="@" />
+          <configref active="False" ref="27e4e1fd-5a65-490a-9837-ebad49e6e724" placeholder="?" />
+          <configref active="False" ref="e5c6c323-615d-4546-8f2b-91e5a37002c6" placeholder="§" />
+          <configref active="False" ref="d8b5be01-134a-4172-9137-4b55a0534c51" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="e5c6c323-615d-4546-8f2b-91e5a37002c6">
+      <active>true</active>
+      <description>NAV1 ACT</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x0350" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Display Module" serial="Botonera MF Mega/ SN-3e9-036" trigger="normal" ledAddress="RadioACT" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="2,3,4,5,6" ledDecimalPoints="4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="b6c9aa48-c09b-4747-896c-6139a2a64f72" operand="=" value="0" logic="and" />
+        </preconditions>
+        <transformation active="True" expression="$+10000" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="9fdd4b41-a1dc-46b7-b119-1b23240e9638" placeholder="A" />
+          <configref active="False" ref="b6c9aa48-c09b-4747-896c-6139a2a64f72" placeholder="@" />
+          <configref active="False" ref="27e4e1fd-5a65-490a-9837-ebad49e6e724" placeholder="?" />
+          <configref active="False" ref="9a43cbef-f836-4025-908e-41908fb5dfb0" placeholder="§" />
+          <configref active="False" ref="d8b5be01-134a-4172-9137-4b55a0534c51" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="27e4e1fd-5a65-490a-9837-ebad49e6e724">
+      <active>true</active>
+      <description>NAV1 STB</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x311E" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Display Module" serial="Botonera MF Mega/ SN-3e9-036" trigger="normal" ledAddress="RadioSTB" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="2,3,4,5,6" ledDecimalPoints="4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="b6c9aa48-c09b-4747-896c-6139a2a64f72" operand="=" value="0" logic="and" />
+        </preconditions>
+        <transformation active="True" expression="$+10000" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="9fdd4b41-a1dc-46b7-b119-1b23240e9638" placeholder="A" />
+          <configref active="False" ref="b6c9aa48-c09b-4747-896c-6139a2a64f72" placeholder="@" />
+          <configref active="False" ref="e5c6c323-615d-4546-8f2b-91e5a37002c6" placeholder="?" />
+          <configref active="False" ref="9a43cbef-f836-4025-908e-41908fb5dfb0" placeholder="§" />
+          <configref active="False" ref="d8b5be01-134a-4172-9137-4b55a0534c51" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="b6c9aa48-c09b-4747-896c-6139a2a64f72">
+      <active>true</active>
+      <description>ComNav Precondition</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x66C1" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="9fdd4b41-a1dc-46b7-b119-1b23240e9638" placeholder="A" />
+          <configref active="False" ref="27e4e1fd-5a65-490a-9837-ebad49e6e724" placeholder="@" />
+          <configref active="False" ref="e5c6c323-615d-4546-8f2b-91e5a37002c6" placeholder="?" />
+          <configref active="False" ref="9a43cbef-f836-4025-908e-41908fb5dfb0" placeholder="§" />
+          <configref active="False" ref="d8b5be01-134a-4172-9137-4b55a0534c51" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="9fdd4b41-a1dc-46b7-b119-1b23240e9638">
+      <active>true</active>
+      <description>MHzKHz switcher</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x66C0" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="b6c9aa48-c09b-4747-896c-6139a2a64f72" placeholder="A" />
+          <configref active="False" ref="27e4e1fd-5a65-490a-9837-ebad49e6e724" placeholder="@" />
+          <configref active="False" ref="e5c6c323-615d-4546-8f2b-91e5a37002c6" placeholder="?" />
+          <configref active="False" ref="9a43cbef-f836-4025-908e-41908fb5dfb0" placeholder="§" />
+          <configref active="False" ref="d8b5be01-134a-4172-9137-4b55a0534c51" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="1b0cad8b-4013-486e-bd2e-a70ed42ad40e">
+      <active>true</active>
+      <description>COM MHz</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" serial="Botonera MF Mega/ SN-3e9-036" name="RadioKnob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x311A" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" inputValue="if($&gt;1900,$-100,$+1800)" />
+          </onLeft>
+          <onLeftFast />
+          <onRight type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x311A" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" inputValue="if($&lt;3697,$+100,$-1800)" />
+          </onRight>
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="9fdd4b41-a1dc-46b7-b119-1b23240e9638" operand="=" value="0" logic="and" />
+          <precondition type="config" active="true" ref="b6c9aa48-c09b-4747-896c-6139a2a64f72" operand="=" value="1" logic="and" />
+        </preconditions>
+      </settings>
+    </config>
+    <config guid="acd6e22b-44d9-4f12-ac48-801ceaf5ae8a">
+      <active>true</active>
+      <description>COM KHz</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" serial="Botonera MF Mega/ SN-3e9-036" name="RadioKnob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x311A" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" inputValue="if($&gt;=1800,if($%5==0,$-3,$-2),3697)" />
+          </onLeft>
+          <onLeftFast />
+          <onRight type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x311A" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" inputValue="if($&lt;3697,if($%5==0,$+2,$+3),1800)" />
+          </onRight>
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="9fdd4b41-a1dc-46b7-b119-1b23240e9638" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="b6c9aa48-c09b-4747-896c-6139a2a64f72" operand="=" value="1" logic="and" />
+        </preconditions>
+      </settings>
+    </config>
+    <config guid="47d6ea33-99a4-4970-aa4a-e28985dfa7cc">
+      <active>true</active>
+      <description>NAV MHz</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" serial="Botonera MF Mega/ SN-3e9-036" name="RadioKnob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x311E" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" inputValue="if($&gt;=900,$-100,$+900)" />
+          </onLeft>
+          <onLeftFast />
+          <onRight type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x311E" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" inputValue="if($&lt;1700,$+100,$-900)" />
+          </onRight>
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="9fdd4b41-a1dc-46b7-b119-1b23240e9638" operand="=" value="0" logic="and" />
+          <precondition type="config" active="true" ref="b6c9aa48-c09b-4747-896c-6139a2a64f72" operand="=" value="0" logic="and" />
+        </preconditions>
+      </settings>
+    </config>
+    <config guid="fa1cf82c-d11e-4ca3-a843-287454c616b4">
+      <active>true</active>
+      <description>NAV KHz</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" serial="Botonera MF Mega/ SN-3e9-036" name="RadioKnob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x311E" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" inputValue="if($&gt;800,$-5,1795)" />
+          </onLeft>
+          <onLeftFast />
+          <onRight type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x311E" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" inputValue="if($&lt;1795,$+5,800)" />
+          </onRight>
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="9fdd4b41-a1dc-46b7-b119-1b23240e9638" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="b6c9aa48-c09b-4747-896c-6139a2a64f72" operand="=" value="0" logic="and" />
+        </preconditions>
+      </settings>
+    </config>
+    <config guid="801aad96-8d77-4a56-b388-61cd9f6a53fd">
+      <active>true</active>
+      <description>ComNav Switch</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" serial="Botonera MF Mega/ SN-3e9-036" name="RadioComNav" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x66C1" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" inputValue="1" />
+          </onPress>
+          <onRelease type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x66C1" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" inputValue="0" />
+          </onRelease>
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="f6a3b93e-a49e-45a0-91e6-b422a2e2957a">
+      <active>true</active>
+      <description>MHzKHz Switch</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" serial="Botonera MF Mega/ SN-3e9-036" name="RadioMHzKHz" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x66C0" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" inputValue="if($=0,1,0)" />
+          </onPress>
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="63b6184e-08e4-443b-a252-04374214c380">
+      <active>true</active>
+      <description>COM FreqSwap</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" serial="Botonera MF Mega/ SN-3e9-036" name="RadioSwap" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x3110" offsetType="Integer" size="4" mask="0xFFFFFFFF" bcdMode="True" inputValue="66372" />
+          </onPress>
+          <onRelease type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x3110" offsetType="Integer" size="4" mask="0xFFFFFFFF" bcdMode="True" inputValue="-66372" />
+          </onRelease>
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="b6c9aa48-c09b-4747-896c-6139a2a64f72" operand="=" value="1" logic="and" />
+        </preconditions>
+      </settings>
+    </config>
+    <config guid="1c277dc8-afc1-49fc-ac22-776f9b9aebd2">
+      <active>true</active>
+      <description>NAV FreqSwap</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" serial="Botonera MF Mega/ SN-3e9-036" name="RadioSwap" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x3110" offsetType="Integer" size="4" mask="0xFFFFFFFF" bcdMode="True" inputValue="66448" />
+          </onPress>
+          <onRelease type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x3110" offsetType="Integer" size="4" mask="0xFFFFFFFF" bcdMode="True" inputValue="-66448" />
+          </onRelease>
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="b6c9aa48-c09b-4747-896c-6139a2a64f72" operand="=" value="0" logic="and" />
+        </preconditions>
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

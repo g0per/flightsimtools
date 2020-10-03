@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName />
+  <PowerSavingTime>600</PowerSavingTime>
+  <LedModule Name="RadioACT" DinPin="22" ClsPin="24" ClkPin="26" Brightness="7" NumModules="1" />
+  <LedModule Name="RadioSTB" DinPin="23" ClsPin="25" ClkPin="27" Brightness="7" NumModules="1" />
+  <Encoder Name="RadioKnob" PinLeft="2" PinRight="3" EncoderType="0" />
+  <Button Name="RadioMHzKHz" Pin="4" />
+  <Button Name="RadioSwap" Pin="5" />
+  <Button Name="RadioComNav" Pin="6" />
+  <LedModule Name="ADF" DinPin="28" ClsPin="30" ClkPin="32" Brightness="7" NumModules="1" />
+  <Encoder Name="ADFKnob" PinLeft="7" PinRight="8" EncoderType="0" />
+  <Button Name="ADFSwap" Pin="9" />
+  <Button Name="ADFDME" Pin="10" />
+</Config>

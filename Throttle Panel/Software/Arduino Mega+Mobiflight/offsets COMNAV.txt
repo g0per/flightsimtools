@@ -1,0 +1,15 @@
+Action			Offset		Value
+===========================================================================
+com mhz lh		0x311A		if($>1900,$-100,$+1800)
+com mhz rh		0x311A		if($<3697,$+100,$-1800)
+com khz lh		0x311a		if($>=1800,if($%5==0,$-3,$-2),3697)
+com khz rh		0x311a		if($<3697,if($%5==0,$+2,$+3),1800)
+nav mhz lh		0x311E		if($>=900,$-100,$+900)
+nav mhz rh		0x311E		if($<1700,$+100,$-900)
+nav khz lh		0x311E		if($>800,$-5,1795)
+nav khz rh		0x311E		if($<1795,$+5,800)
+
+com swap press		0x3110		66372
+com swap release	0x3110		-66372
+nav swap press		0x3110		66448
+nav swap release	0x3110		-66448

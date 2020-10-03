@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="3aa44066-13ad-4aed-b9d0-1ea563595a9d">
+      <active>true</active>
+      <description>COM 1 STB</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x311A" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" />
+        <comparison active="True" value="0" operand="=" ifValue="$+10000" elseValue="$+10000" />
+        <display type="Display Module" serial="Botonera MF Mega/ SN-3e9-036" trigger="normal" ledAddress="LCDRadios" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="0,1,2,3" ledDecimalPoints="2" />
+        <preconditions />
+        <transformation active="True" expression="$-10000" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="5d64b208-2793-43a5-bb80-210197350a0c" placeholder="#" />
+          <configref active="False" ref="5d64b208-2793-43a5-bb80-210197350a0c" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="5d64b208-2793-43a5-bb80-210197350a0c">
+      <active>true</active>
+      <description>COM 1 Precondition</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x66C0" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a3b111ac-3ba7-4c86-befa-e7d75561c4ad">
+      <active>true</active>
+      <description>COM1 ACT</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x034E" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Display Module" serial="Botonera MF Mega/ SN-3e9-036" trigger="normal" ledAddress="LCDRadios" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="4,5,6,7" ledDecimalPoints="6" />
+        <preconditions />
+        <transformation active="True" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="5d64b208-2793-43a5-bb80-210197350a0c" placeholder="§" />
+          <configref active="False" ref="3aa44066-13ad-4aed-b9d0-1ea563595a9d" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="8495e3e4-9e8d-4d56-8a0f-520e694646b4">
+      <active>true</active>
+      <description>MHz</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" serial="Botonera MF Mega/ SN-3e9-036" name="EncoderCom1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x311A" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" inputValue="if($&gt;1900,$-100,$+1800)" />
+          </onLeft>
+          <onLeftFast />
+          <onRight type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x311A" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" inputValue="if($&lt;3697,$+100,$-1800)" />
+          </onRight>
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="5d64b208-2793-43a5-bb80-210197350a0c" operand="=" value="1" logic="and" />
+        </preconditions>
+      </settings>
+    </config>
+    <config guid="5c289765-6a6e-47c9-86a9-5500b2e49d36">
+      <active>true</active>
+      <description>KHz</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" serial="Botonera MF Mega/ SN-3e9-036" name="EncoderCom1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x311A" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" inputValue="if($&gt;=1800,if($%5==0,$-3,$-2),3697)" />
+          </onLeft>
+          <onLeftFast />
+          <onRight type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x311A" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" inputValue="if($&lt;3697,if($%5==0,$+2,$+3),1800)" />
+          </onRight>
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="5d64b208-2793-43a5-bb80-210197350a0c" operand="=" value="0" logic="and" />
+        </preconditions>
+      </settings>
+    </config>
+    <config guid="98383381-4df6-4e84-ab29-278eef0eb5f7">
+      <active>true</active>
+      <description>Push Button</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" serial="Botonera MF Mega/ SN-3e9-036" name="ButtonUnitsCom1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x66C0" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" inputValue="if($=0,1,0) " />
+          </onPress>
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
