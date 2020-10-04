@@ -1,19 +1,19 @@
 # flightsimtools
-Recopilación de las herramientas que voy haciendo para los simuladores de vuelo.
+Compilation of tools for my flightsim experience.
 
 WIP.
 
-## Descargar
-Pincha en el botón verde de 'código' arriba a la derecha, y bájatelo como ZIP. Descomprímelo donde quieras, y ejecuta el script que necesites.
+## Download
+Just clone the repo and execute the script you need.
 
-## Índice
- * tod_calc.py -> calculadora de aproximación. Indica T/D y ROD.
- * lbs2kg.py -> conversor rápido entre libras y kilos.
- * inhg2hpa -> conversor rápido entre unidades de presión.
+## Index
+ * tod_calc.py -> T/D & ROD calculator
+ * lbs2kg.py -> weight units conversor
+ * inhg2hpa -> pressure units conversor
  
-## Proyectos secundarios
- * Throttle Panel/ -> Throttle Panel+AP/radio panel. Incluye: originales y mods tanto de los .stl como de la programación de las Arduino. **WIP**
+## Secondary projects
+ * /Throttle Panel/ -> Throttle Panel+AP/radio panel. **WIP**
 
-## Dependencias
+## Dependencies
  * Python 3
  * Mobiflight + FSUIPC7+ -> Throttle Panel (only required for Comms box)
