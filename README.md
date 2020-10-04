@@ -7,11 +7,12 @@ WIP.
 Just clone the repo and execute the script you need.
 
 ## Index
+### Standalone
  * tod_calc.py -> T/D & ROD calculator
  * lbs2kg.py -> weight units conversor
  * inhg2hpa -> pressure units conversor
  
-## Secondary projects
+### Secondary projects
  * /Throttle Panel/ -> Throttle Panel+AP/radio panel. **WIP**
 
 ## Dependencies
